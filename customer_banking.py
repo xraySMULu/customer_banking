@@ -17,15 +17,15 @@ def main():
 
     # round value to 2 decimel            
     updated_savings_balance =str(updated_savings_balance) 
-    updated_savings_balance = "{:,}".format(updated_savings_balance)
-    # Print out the updated savings account balance with interest earned for the given months.
-    print(f"Updated savings balance is: ${float(updated_savings_balance):.2f}")
+    updated_savings_balance = float(updated_savings_balance)    
+    # Print out the updated savings account balance with interest earned for the given months.    
+    print(f"Updated savings balance is: ${format(updated_savings_balance, ',.2f')}")
     
     # round value to 2 decimel            
     interest_earned =str(interest_earned)  
-    interest_earned = "{:,}".format(interest_earned)
+    interest_earned = float(interest_earned)
     # Print out the interest earned for the given months.
-    print(f"Interest earned is: ${float(interest_earned):.2f}")
+    print(f"Interest earned is: ${format(interest_earned, ',.2f')}")
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     cd_balance = input("Enter CD balance: ")
@@ -36,15 +36,15 @@ def main():
     updated_cd_balance, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
  # round value to 2 decimel            
     updated_cd_balance =str(updated_cd_balance) 
-    updated_cd_balance = "{:,}".format(updated_cd_balance)
+    updated_cd_balance = float(updated_cd_balance)
     # Print out the updated CD balance with interest earned for the given months.
-    print(f"Updated CD balance is: ${float(updated_cd_balance):.2f}")
+    print(f"Updated CD balance is: ${format(updated_cd_balance, ',.2f')}")
     
     # round value to 2 decimel            
     interest_earned =str(interest_earned)  
-    interest_earned = "{:,}".format(interest_earned)
+    interest_earned = float(interest_earned)
     # Print out the interest earned for the given months.
-    print(f"Interest earned is: ${float(interest_earned):.2f}")
+    print(f"Interest earned is: ${format(interest_earned, ',.2f')}")
 
 
 

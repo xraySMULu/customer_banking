@@ -36,7 +36,7 @@ def update_cd_account(balance, interest_earned):
     carried_balance = float(balance)
     if carried_balance > 0:
         deposit_balance = carried_balance + interest_earned
-        print(f"The new balance of your cd account is ${float(deposit_balance):.2f}")
+        #print(f"The new balance of your cd account is ${format(deposit_balance, ',.2f')}")
     else:
         print("Your deposit amount must be positive.")
     return deposit_balance

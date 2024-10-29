@@ -36,7 +36,7 @@ def update_savings_account(balance, interest_earned):
     if carried_balance > 0:
         deposit_balance = carried_balance + interest_earned
         deposit_balance = float(deposit_balance)
-        print(f"The new balance of your savings account is ${deposit_balance:.2f}")
+        #print(f"The new balance of your savings account is ${format(deposit_balance, ',.2f')}")
     else:
         print("Your deposit amount must be positive.")
     return deposit_balance

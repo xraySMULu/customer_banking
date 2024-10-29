@@ -6,5 +6,5 @@ class HelperMethods:
         intr = float(interest_rate)
         mths = float(months)       
         int_earned = bal * (intr/100 * mths/12)        
-        print(f"Interest_earned is: ${int_earned:.2f}")
+        #print(f"Interest_earned is: ${format(int_earned, ',.2f')}")
         return int_earned
