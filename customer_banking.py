@@ -34,7 +34,7 @@ def main():
 
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
- # round value to 2 decimel            
+    # round value to 2 decimel            
     updated_cd_balance =str(updated_cd_balance) 
     updated_cd_balance = float(updated_cd_balance)
     # Print out the updated CD balance with interest earned for the given months.
